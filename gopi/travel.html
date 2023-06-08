@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Travel</title>
+<meta charset="UTF-8"/>
+<meta name="viewport"content="width=device-width,intial-scale=1.0"/>
+<link rel="stylesheet"href="tourism.css"/>
+<script>
+function validform(){
+ var password=document.myform.pass1.value
+ var cpassword=document.myform.pass2.value
+ if(password.length<6){
+ alert("enter minimum 6digits in password")
+ return false
+ }
+ if(password=cpasssword){
+ return true
+ }
+ else{
+ alert("password&confirm-password must be same")
+ return false
+}
+var Name=document.myform.name1.value
+if(Name="null"||Name==""||Name==[]){
+alert("enter a proper Name")
+return false
+}
+var Email=document.myform.email.value
+var atposition=Email.indexOf("@")
+var dotposition=Email.lastIndexOf(".")
+if(atposition<1 || dotposition<atposition2 || dotposition+ 2>=Email.lenght){
+alert("enter a proper email")
+return false
+}
+}
+</script>
+</head>
+<body>
+<nav>
+<img src="jammulogo1.jpeg"/>
+<ul>
+<li>Home</li>
+<li>Serivce</li>
+<li>Experiences</li>
+<li>Blog</li>
+<li>Contact</li>
+</ul>
+</nav>
+<header>
+<img src="jammuimage2.jpg" width="100%" height="350px"/> 
+</header>
+<content class="flex-container">
+<div class="flex-item">
+<img src="jammuimage.jpeg" align="center"/>
+<p><b> Mountain </b></p>
+<p> Now here in india you will <br> behold the scenic<br> landscapes,icy glaciers,<br> pristine lakes<br> and lofty <br> mountains as<br> beautiful as kashmir</p>
+</div>
+<div class="flex-item">
+<img src="jammuhotel.jpg" width="250px" align="center"/>
+<p><b> Hotel </b></p>
+<p> The unbelievably beautiful <br> places to visit in kashmir have fascinated <br> tourists from worldwide,and now <br> it is your turn to <br>discover this 'Paradise on Earth'</p>
+</div>
+<div class="flex-item">
+<img src="jammufestival.jpg" width="280px" height="50%" align="center"/>
+<p><b> Festival </b></p>
+<p> These festivals,besides serving <br>to break the monotony of life,help in<br> bringing all the people together <br> irrespective of their caste, <br> community,religion,social background. </p>
+</div>
+</content>
+<section>
+<div id="s1">
+<br>
+<br>
+<h2 align="center"> About us </h2><br>
+<p align="center"> On this site, you can get discounts on almost anything,<br> including flights, hotel, cars, activities, and more. </p>
+<p align="center"> One of the most well-known travel websites in the world,<br> Expedia has a robust rewards program with amenities<br> and discounts you won’t find anywhere else.</p>
+<p align="center"> This website is a little different. It offers an email list that <br>tracks flights and their prices. If there is a change in prices, you’ll <br>get an email with information that could save you a lot of money.<br></p>
+<p align="center"> This site highlights travel and luxe living but lists 12 unique and<br> unusual places to stay around the world that will appeal to all your senses.<br> Luxury resorts underwater or capsule suites hanging from cliffs<br> are just some of the experiences you can enjoy.</p>
+</div>
+<aside>
+<img src="jammuimage1.jpg" width="630px" height="420px"/>
+</aside>
+</section>
+<form name="myform" onsubmit="return validform()" id="s3">
+	<br>
+	<label> User name: </label><br>
+	<input type="text" name="name1" placeholder="username" pattern="[a-zA-Z ]{3,}" required/><br> 
+	<label> Email Address: </label><br>
+	<input type="email" placeholder="type your email address here" pattern="[a-z0-9 @.]{1,}" required/><br>
+	<label> Password: </label><br>
+	<input type="password" name="pass1" placeholder="Type your password here" required/>
+	<span style="color:blue;float:right;"> Forgot password? </span>
+	<br>
+	<label> Confirm Password: </label><br>
+	<input type="password" name="pass2" placeholder="Type your password again" required/><br>
+	<button> Login </button>
+</form>
+<hr>
+<p align="center"><b> © 2023 Time To Travel Tourism | All rights reserved </b></p>
+
+</body>
+</html>
